@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogging Platform</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .header-nav {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      background-color: #ddd;
+      display: inline-block;
+    }
+
+    .navigation {
+      display: inline-block;
+    }
+
+    .post {
+      background-color: #f1f1f1;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .post .category-author {
+      font-size: small;
+      color: gray;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .post .title {
+      font-size: xx-large;
+      font-weight: bold;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .post .content {
+      font-size: medium;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #f8f9fa;
+      padding: 2rem 0;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <a class="navbar-brand" href="/">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filter
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/category/Tech">Tech</a>
+            <a class="dropdown-item" href="/category/Education">Education</a>
+            <a class="dropdown-item" href="/category/Entertainment">Entertainment</a>
+            <a class="dropdown-item" href="/category/Lifestyle">Lifestyle</a>
+            <a class="dropdown-item" href="/category/Other">Others</a>
+            <!-- Add more categories as needed -->
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="post">
+      <div class="category-author">
+        <div class="category">Category</div>
+        <div class="author">Author</div>
+      </div>
+      <div class="title">Title</div>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim 
