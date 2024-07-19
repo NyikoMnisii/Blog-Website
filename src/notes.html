@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the best bursaries for students in 2024 and. Learn how to apply and secure funding for your education with our comprehensive guide.">
   <title>EduQuest Blogs - Applications, Bursaries, Internships</title>
-  <meta name="description" content="Discover valuable insights and tips on university applications, bursaries, and internships. Join our community to stay informed and succeed in your academic journey.">
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Modern colors */
+    /* General styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    /* Navbar styles */
     .navbar-light .navbar-brand,
     .navbar-light .navbar-nav .nav-link {
       color: #333333;
@@ -18,6 +24,7 @@
     .navbar-light .navbar-nav .nav-link:hover {
       color: #007bff;
     }
+    /* Button styles */
     .btn-primary {
       background-color: #007bff;
       border-color: #007bff;
@@ -26,11 +33,20 @@
       background-color: #0056b3;
       border-color: #004a99;
     }
+    .btn-outline-primary {
+      border-color: #007bff;
+      color: #007bff;
+    }
+    .btn-outline-primary:hover {
+      background-color: #007bff;
+      color: #fff;
+    }
+    /* Card styles */
     .card {
       border-color: #dee2e6;
       border-radius: 0.5rem;
-      height: 100%;
     }
+    /* Footer styles */
     .footer {
       background-color: #f8f9fa;
       padding: 2rem 0;
@@ -45,30 +61,54 @@
     .list-inline-item a:hover {
       color: #007bff;
     }
-    .card-text.collapse {
-      max-height: 100%; /* Limit initial height */
-      overflow: hidden; /* Hide content beyond max-height */
+    /* Blog text styles */
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-align: left;
     }
-    .Bursaries, .opportunities {
-    background: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    .card-text {
+      font-size: 1rem;
+      color: #555;
+      text-align: justify;
     }
-    .Bursaries, .opportunities p {
-    color: #666;
-    font-size: 1em;
-    margin-bottom: 15px;
+    .card-category {
+      text-align: left;
+      color: #888;
+      font-size: 0.9rem;
     }
-    .Bursaries, .opportunities h3 {
-    color: #333;
-    font-size: 1em;
-    margin-bottom: 15px;
+    .jumbotron {
+      background-color: #007bff;
     }
-
-
+    .jumbotron h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .jumbotron p {
+      font-size: 1.25rem;
+      text-align: center;
+    }
+    .Bursaries h3 {
+      font-size: 0.75 rem;
+      text-align: center;
+      padding-top: 15px;
+    }
+    .Bursaries h4 {
+      font-size: 0.75 rem;
+      text-align: center;
+    }
+    .Bursaries p {
+      font-size: 0.75 rem;
+      text-align: center;
+    }
+    .opportunities h3 {
+      font-size: 0.75 rem;
+      text-align: center;
+    }
+    .opportunities p {
+      font-size: 0.75 rem;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -81,7 +121,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="Home.html">Home</a>
+          <a class="nav-link" href="Index.html">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -96,31 +136,29 @@
             <!-- Add more categories as needed -->
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Create Post.html">Create Blogs</a>
-        </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       </form>
-      <button class="btn btn-outline-primary my-2 my-sm-0" id="logout">Logout</button>
+      <a class="btn btn-outline-primary my-2 my-sm-0" href="Login.html">Log in / Sign up</a>
     </div>
   </nav>
   <div class="container mt-4">
-    <div class="jumbotron text-center bg-primary text-white">
-      <h1 class="display-4">Welcome to Our Blogging Platform!</h1>
-      <p class="lead">Join Others in Creating articles on various topics. Let's explore some of the trending topics you may be interested in.</p>
+    <div class="jumbotron text-center text-white">
+      <h1 class="display-4">Welcome to EduQuest Blogs</h1>
+      <p class="lead">Are you a Grade 12 student, a first-year university student, or a recent graduate looking for valuable information on applications, bursaries, and internships? You've come to the right place! Our platform is dedicated to helping you navigate your academic and career journey with ease.</p>
+      <a href="Login.html" class="btn btn-light btn-lg">Get Started</a>
     </div>
     <div class="row" id="blog-posts-container">
-      <!-- Blog posts will be dynamically inserted here -->
+      <!-- Blog posts will be injected here dynamically -->
     </div>
   </div>
   <div  class="Bursaries">
     <h3>Applying for University Bursaries</h3>
-    <p>Securing a bursary can significantly reduce the financial burden of higher education. Here are the steps to apply:</p>
+    <p>Securing a <strong>bursary</strong> can significantly reduce the financial burden of higher education. Here are the steps to apply:</p>
     <div>
       <h4>Step 1: Research Available Bursaries</h4>
-      <p>Start by identifying bursaries offered by various institutions, including law enforcement agencies and other organizations.</p>
+      <p>Start by identifying bursaries offered by various institutions, including <strong>law enforcement agencies</strong> and other organizations.</p>
     </div>
     <div>
       <h4>Step 2: Prepare Necessary Documents</h4>
@@ -135,77 +173,39 @@
     <h3>Stay on High Alert for New Opportunities</h2>
     <p>Keep an eye on announcements from institutions and enforcement agencies. Being on high alert ensures you don't miss out on any potential opportunities to advance your education and career.</p>
   </div>
+
   <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <img src="Logo.png" alt="Logo" class="footer-logo">
+          <img src="logo.png" alt="Logo" class="footer-logo">
         </div>
         <div class="col-md-4">
           <h5>Follow Us</h5>
           <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"><img src="Images/facebooks.png" height="25" width="25"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.twitter.com"><i class="fab fa-twitter"><img src="Images/twitter.png" height="25" width="25"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fab fa-instagram"><img src="Images/whatsapp.png" height="25" width="25"></i></a></li>
           </ul>
         </div>
         <div class="col-md-4">
-          <p class="text-muted">&copy; 2023 Blogging Platform. All rights reserved.</p>
+          <p class="text-muted">&copy;2024 EduQuest. All rights reserved. developed by Nyiko Mnisi</p>
         </div>
       </div>
     </div>
   </footer>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Blog",
-      "name": "EduQuest Blogs",
-      "description": "Discover valuable insights and tips on university applications, bursaries, and internships. Join our community to stay informed and succeed in your academic journey.",
-      "url": "https://eduquestblogs.netlify.app",
-      "publisher": {
-        "@type": "Organization",
-        "name": "EduQuest",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://eduquestblogs.netlify.app/Logo.png",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "mainEntity": [
-        {
-          "@type": "EducationalOrganization",
-          "name": "Bursary Application Guide",
-          "description": "Steps to apply for university bursaries including research, document preparation, and application submission.",
-          "url": "https://eduquestblogs.netlify.app#bursaries"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "Opportunities Alert",
-          "description": "Tips on staying alert for new educational opportunities and advancements.",
-          "url": "https://eduquestblogs.netlify.app#opportunities"
-        }
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "telephone": "+27-123-456789",
-        "email": "contact@example.com"
-      }
-    }
-    </script>
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <!-- Firebase SDK -->
   <script type="module">
-    // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
-    import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
-    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
-    
+    import { getFirestore, collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
+
     const firebaseConfig = {
       apiKey: "AIzaSyCp2g4mHMLPRIuLuTfnVbkeCLFf17moW00",
       authDomain: "eduquest-blog.firebaseapp.com",
@@ -215,46 +215,33 @@
       appId: "1:747281368027:web:9d921e6e93fbc380ffddfe",
       measurementId: "G-CEL7WYVZJS"
     };
-    
+
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
-    const auth = getAuth();
     const db = getFirestore(app);
-    
-    // Handle logout button click
-    document.getElementById("logout").addEventListener("click", function() {
-      signOut(auth).then(() => {
-        // Sign-out successful.
-        console.log('Sign-out successful.');
-        alert('Sign-out successful.');
-        // Optionally redirect to login or homepage
-        window.location.href = "index.html"; // Redirect to login or homepage
-      }).catch((error) => {
-        // An error happened.
-        console.log('Sign-out error:', error.message);
-        alert('Sign-out error:', error.message);
-      });
-    });
-    
-    // Fetch and display blog posts
-    async function fetchPosts() {
+
+    async function fetchPosts(category = null) {
       const postsContainer = document.getElementById('blog-posts-container');
+      postsContainer.innerHTML = ''; // Clear existing posts
       try {
-        const querySnapshot = await getDocs(collection(db, 'posts'));
+        let q;
+        if (category) {
+          q = query(collection(db, 'posts'), where('category', '==', category));
+        } else {
+          q = collection(db, 'posts');
+        }
+        const querySnapshot = await getDocs(q);
         querySnapshot.forEach((doc) => {
           const post = doc.data();
           const postElement = document.createElement('div');
-          postElement.classList.add('col-md-4', 'mb-4');
+          postElement.classList.add('col-md-4');
           postElement.innerHTML = `
-            <div class="card h-100 shadow-sm">
-              <div class="card-body d-flex flex-column">
-                <p class="card-text"><small class="text-muted">Category: ${post.category}</small></p>
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <p class="card-category"><small class="text-muted">Category: ${post.category}</small></p>
                 <h3 class="card-title">${post.title}</h3>
-                <p class="card-text collapse" id="collapse-${doc.id}">${post.content}</p>
-                <button class="btn btn-link mt-auto" type="button" data-toggle="collapse" data-target="#collapse-${doc.id}" aria-expanded="false" aria-controls="collapse-${doc.id}">
-                  See More
-                </button>
+                <p class="card-text">${post.content}</p>
               </div>
             </div>
           `;
@@ -264,10 +251,17 @@
         console.error('Error fetching posts:', error);
       }
     }
-    
+
+    // Event listeners for category filtering
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+      item.addEventListener('click', event => {
+        const category = event.target.getAttribute('data-category');
+        fetchPosts(category);
+      });
+    });
+
+    // Initial fetch of all posts
     fetchPosts();
   </script>
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
