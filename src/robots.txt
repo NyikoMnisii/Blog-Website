@@ -1,0 +1,8 @@
+# robots.txt for eduquestblogs.netlify.app
+
+User-agent: *
+Disallow: /Login/
+Disallow: /Register/
+Allow: /
+
+Sitemap: https://eduquestblogs.netlify.app/sitemap.xml
